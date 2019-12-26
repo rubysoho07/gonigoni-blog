@@ -4,6 +4,7 @@ categories: AWS
 tags: [AWS, EC2, Hadoop, Big Data]
 draft: false
 date: 2019-10-16T21:05:00+09:00
+comments: true
 ---
 
 ## 들어가며

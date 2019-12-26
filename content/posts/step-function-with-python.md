@@ -4,6 +4,7 @@ categories: AWS
 tags: [AWS, Step Functions, EC2]
 draft: false
 date: 2018-10-04T23:21:00+09:00
+comments: true
 ---
 
 AWS에는 [Step Functions](https://aws.amazon.com/ko/step-functions/)라는 서비스가 있다. 여러 개의 활동(activity)를 조합해서 순서대로 또는 반복적으로 원하는 작업을 실행할 수 있도록 해 주는 서비스이다. 

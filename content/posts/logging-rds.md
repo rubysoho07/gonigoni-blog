@@ -4,6 +4,7 @@ categories: AWS
 tags: [RDS, MySQL, AWS]
 draft: false
 date: 2018-10-03T14:24:00+09:00
+comments: true
 ---
 
 RDS MySQL을 이용하면, 아래와 같이 CloudWatch에 일반/감사/느린 쿼리 로그를 찍도록 설정할 수 있다. 

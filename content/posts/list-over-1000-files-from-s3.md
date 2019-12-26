@@ -4,6 +4,7 @@ categories: AWS
 tags: [AWS, S3, Boto3, Paginator]
 draft: false
 date: 2018-11-29T00:38:00+09:00
+comments: true
 ---
 
 S3 버킷에는 여러 파일들을 저장할 수 있다. 그런데, 버킷에 저장된 파일의 목록을 보고 싶은 경우가 있을 것이다. 하지만, AWS의 Python SDK인 Boto3에서 `list_objects()`나 `list_objects_v2()` 함수를 이용하면 최대 1,000개까지의 object만 가져올 수 있다. [\[참고\]](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_objects_v2) (근본적으로는 AWS의 API가 최대 1,000개까지의 object만 가져오도록 구현되어 있다. - [\[참고\]](https://docs.aws.amazon.com/AmazonS3/latest/API/v2-RESTBucketGET.html))

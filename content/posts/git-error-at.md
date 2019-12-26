@@ -4,6 +4,7 @@ categories: Git
 tags: [Git]
 draft: false
 date: 2018-10-02T23:46:00+09:00
+comments: true
 ---
 
 부서에서 사용하는 CodeCommit에 Push를 하려고 하는데, 아래와 같은 오류 때문에 Push를 할 수 없었다.

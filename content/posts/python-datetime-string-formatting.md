@@ -4,6 +4,7 @@ categories: Python
 tags: [Python, 문자열]
 draft: false
 date: 2018-05-14T23:24:00+09:00
+comments: true
 ---
 
 파이썬을 쓰다 보면 문자열을 다루는 경우가 많은데, 문자열을 특정한 양식에 맞추어야 하는 경우가 종종 있었다. 이 경우 [PyFormat](http://pyformat.info)과 같은 사이트를 참조한다. 하지만 날짜나 시간을 formatting 할 때는 상세한 규칙이 정리되어 있지 않아서 이 참에 정리를 해 보려고 한다. 

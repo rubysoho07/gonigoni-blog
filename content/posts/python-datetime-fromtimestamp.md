@@ -4,6 +4,7 @@ categories: Python
 tags: [Python, datetime, fromtimestamp]
 draft: false
 date: 2018-09-13T00:08:00+09:00
+comments: true
 ---
 
 최근에 Timestamp가 있는 데이터를 다루다가, 신기한 버그를 발견하여 여기에 기록해 본다. 해당 문제가 수정된 것 같기는 한데, 아직 배포는 안 된 것 같다.

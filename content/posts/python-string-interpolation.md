@@ -4,6 +4,7 @@ categories: Python
 tags: [문자열, format]
 draft: false
 date: 2018-12-01T20:54:00+09:00
+comments: true
 ---
 
 문자열을 다루다 보면 `.format()`을 사용하는데, .format()으로 어떻게 문자열 중간을 채워볼 지에 대해 알아보겠다. 이 글은 필요할 때 매번 찾아보다가 귀찮아서 정리해 본 것이다.

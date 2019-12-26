@@ -4,6 +4,7 @@ categories: AWS
 tags: [AWS, EC2, MongoDB]
 draft: false
 date: 2019-02-16T22:30:00+09:00
+comments: true
 ---
 
 최근에 AWS에서 MongoDB와 호환되는 [DocumentDB](https://aws.amazon.com/ko/documentdb/)를 출시했지만, ~~아직 서울 리전에서는 사용할 수 없다.~~

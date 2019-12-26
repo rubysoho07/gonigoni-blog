@@ -4,6 +4,7 @@ categories: Python
 tags: [Python, datetime, 시간대]
 draft: false
 date: 2018-05-17T22:06:00+09:00
+comments: true
 ---
 
 여러 국가에 걸쳐 시간과 관련된 데이터를 얻을 때 시간대가 가장 이슈가 될 것이다. 그리고 AWS와 같이 UTC를 기준으로 하는 서비스가 있기 때문에, 우리나라의 시간대를 기준으로 프로그램을 만들 때 고민이 되는 부분이 있다. 

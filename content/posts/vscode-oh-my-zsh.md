@@ -4,6 +4,7 @@ categories: Linux
 tags: [VSCode, Visual Studio Code, zsh, oh-my-zsh, font]
 draft: false
 date: 2018-10-04T21:34:00+09:00
+comments: true
 ---
 
 최근에 oh-my-zsh를 써 보기 시작했다. (써보면 편하다고는 하는데, 아직까지는 체감을 못하고 있긴 하다.)

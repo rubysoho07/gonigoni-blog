@@ -4,6 +4,7 @@ categories: AWS
 tags: [AWS, Lambda]
 draft: false
 date: 2018-10-02T23:16:00+09:00
+comments: true
 ---
 
 test라는 함수가 있고, dev, release라는 별칭(alias)이 존재한다고 하자. 그리고 모든 별칭은 동일한 버전을 가리킨다고 하자.

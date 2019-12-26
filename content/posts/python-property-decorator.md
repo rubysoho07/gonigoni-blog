@@ -4,6 +4,7 @@ categories: Python
 tags: [Python, property, getter, setter]
 draft: false
 date: 2018-05-18T23:36:00+09:00
+comments: true
 ---
 
 예전에 어떤 소스를 보다가 클래스 내부에 `@property` 데코레이터가 붙어 있는 경우를 본 적이 있다. 어떤 경우에 사용하는지 궁금해서 한 번 정리해 보려 한다.

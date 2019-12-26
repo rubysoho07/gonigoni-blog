@@ -4,6 +4,7 @@ categories: Python
 tags: [Python, 테스트]
 draft: false
 date: 2018-05-15T22:35:00+09:00
+comments: true
 ---
 
 이번 글에서는 파이썬에서 테스트 코드를 만들면서 겪었던 시행착오에 대해 소개하고자 한다. 여기서는 파이썬에 내장된 `unittest`를 이용한다.

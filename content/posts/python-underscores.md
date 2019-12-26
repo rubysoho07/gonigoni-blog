@@ -4,6 +4,7 @@ categories: Python
 tags: [Python, underscore, pep-8]
 draft: false
 date: 2018-05-26T10:32:00+09:00
+comments: true
 ---
 
 > 파이썬에는 [PEP-8](https://www.python.org/dev/peps/pep-0008/)이라는 Python Code Style Guide가 있다. 모든 내용을 한 번에 정리하기 어려워서 그냥 코딩하다가 궁금한 것 위주로 정리해 보려고 한다.

@@ -4,6 +4,7 @@ date: 2017-12-10T16:02:00+09:00
 tags: [이직]
 draft: false
 categories: Everything
+comments: true
 ---
 
 > 이 포스트는 개인적으로 이직을 준비하는 과정에서 느낀 점들을 정리한 글입니다.

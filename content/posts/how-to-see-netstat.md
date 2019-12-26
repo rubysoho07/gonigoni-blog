@@ -4,6 +4,7 @@ categories: Linux
 tags: [netstat, 모니터링, 네트워크]
 draft: false
 date: 2018-12-25T17:15:00+09:00
+comments: true
 ---
 
 회사에서 개발한 웹 서비스의 내부 테스트 버전을 배포하고, 다음과 같은 질문을 받았다. 
