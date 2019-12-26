@@ -2,7 +2,7 @@
 title: "sed를 이용한 텍스트 파일 바꾸기"
 categories: Linux
 tags: [Linux, sed]
-draft: true
+draft: false
 date: 2018-04-21T21:09:00+09:00
 ---
 

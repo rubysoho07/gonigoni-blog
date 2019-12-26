@@ -2,7 +2,7 @@
 title: "Python underscore 관련 naming convention"
 categories: Python
 tags: [Python, underscore, pep-8]
-draft: true
+draft: false
 date: 2018-05-26T10:32:00+09:00
 ---
 

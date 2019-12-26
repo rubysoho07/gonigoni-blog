@@ -2,7 +2,7 @@
 title: "AWS Lambda에서 별칭(alias)으로 함수 버전 구분하기"
 categories: AWS
 tags: [AWS, Lambda]
-draft: true
+draft: false
 date: 2018-10-02T23:16:00+09:00
 ---
 

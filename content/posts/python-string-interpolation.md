@@ -2,7 +2,7 @@
 title: "파이썬 문자열 다루기 - str.format()"
 categories: Python
 tags: [문자열, format]
-draft: true
+draft: false
 date: 2018-12-01T20:54:00+09:00
 ---
 

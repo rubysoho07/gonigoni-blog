@@ -2,7 +2,7 @@
 title: "Hortonworks Sandbox를 AWS에서 사용하기"
 categories: AWS
 tags: [AWS, EC2, Hadoop, Big Data]
-draft: true
+draft: false
 date: 2019-10-16T21:05:00+09:00
 ---
 

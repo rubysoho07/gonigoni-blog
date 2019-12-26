@@ -2,7 +2,7 @@
 title: "2018년 회고"
 categories: Everything
 tags: [회고, 2018년]
-draft: true
+draft: false
 date: 2019-01-01T18:13:00+09:00
 ---
 

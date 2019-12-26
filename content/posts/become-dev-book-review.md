@@ -2,7 +2,7 @@
 title: "책 리뷰 - '인문학도, 개발자되다'"
 categories: Everything
 tags: [책, 리뷰]
-draft: true
+draft: false
 date: 2018-11-29T23:36:00+09:00
 ---
 
