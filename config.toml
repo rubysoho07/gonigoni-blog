@@ -3,7 +3,7 @@ languageCode = "ko-kr"
 title = "GoniGoni!"
 theme = "mainroad"
 googleAnalytics = "UA-131546844-1"
-discusShortname = "gonigoni-blog"
+disqusShortname = "gonigoni-blog"
 
 [Author]
   name = "Yungon Park"
