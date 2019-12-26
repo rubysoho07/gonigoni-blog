@@ -1,0 +1,27 @@
+baseURL = "/"
+languageCode = "ko-kr"
+title = "GoniGoni!"
+theme = "mainroad"
+googleAnalytics = "UA-131546844-1"
+discusShortname = "gonigoni-blog"
+
+[Author]
+  name = "Yungon Park"
+  bio = "Test"
+
+[Params]
+  subtitle = "개발 블로그이지만 개발 말고 다른 이야기도 합니다."
+  description = "주로 이야기할 주제는 AWS, Python, 프로그래밍과 관련된 것들이지만, 생활하면서 느낀 이야기도 가끔씩 적어볼 예정입니다."
+  copyright = "Yungon Park"
+
+[Params.sidebar]
+  home = "right"
+  list = "left"
+  single = false
+  widgets = ["search", "categories", "taglist", "social"]
+
+[Params.widgets.social]
+  facebook = "rubysoho07"
+  linkedin = "rubysoho07"
+  github = "rubysoho07"
+  email = "hahafree12@gmail.com"
