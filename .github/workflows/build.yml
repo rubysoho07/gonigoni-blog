@@ -28,6 +28,8 @@ jobs:
     - name: Upload public blog
       run: |
         echo Upload blog with action...
+        git config --global user.name "Yungon Park"
+        git config --global user.email "hahafree12@gmail.com"
         cd public
         git commit -am "Build blog with action: $GITHUB_SHA"
         git push origin master
