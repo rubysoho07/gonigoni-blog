@@ -25,10 +25,13 @@ jobs:
         token: ${{ secrets.GH_PAT }}
         submodules: 'recursive'
       
-    - name: Build blog
+    - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
         hugo-version: 'latest'
+        
+    - name: Build blog
+      run: hugo
     
     - name: Deploy blog
       uses: peaceiris/actions-gh-pages@v3
