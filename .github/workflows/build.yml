@@ -21,16 +21,19 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.GH_PAT }}
+        submodules: 'recursive'
       
     - name: Build blog
-      uses: srt32/git-actions@master
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'
     
-    - name: Upload public blog
-      run: |
-        echo Upload blog with action...
-        git config --global user.name "Yungon Park"
-        git config --global user.email "hahafree12@gmail.com"
-        cd $GITHUB_WORKSPACE/public
-        git commit -am "Build blog with action: $GITHUB_SHA"
-        git push origin master
-        echo Upload completed
+    - name: Deploy blog
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        external_repository: rubysoho07/rubysoho07.github.io
+        publish_branch: master
+        publish_dir: ./public
