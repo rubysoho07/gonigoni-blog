@@ -2,9 +2,9 @@
 title: "AWS Lambda에 Pandas 올리기"
 date: 2020-06-27T21:45:40+09:00
 tags: [AWS, Lambda, Pandas, Serverless]
-draft: true
+draft: false
 categories: AWS
-comments: false
+comments: true
 ---
 
 팀 내에서는 Lambda 안에 파이썬 코드를 올려서 쓰고 있지만, 혹시 Pandas와 같은 라이브러리를 Lambda에 올리려면 어떻게 해야 할 지 궁금해서 정리해 본다. 
