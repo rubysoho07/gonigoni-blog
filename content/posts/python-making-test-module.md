@@ -55,10 +55,7 @@ OK
 아래 스크린샷과 같은 화면은 메뉴에서 Run -> Edit Configurations 메뉴를 클릭하면 확인할 수 있다. 
 
 아래와 같은 화면이 나오지 않는 경우, 왼쪽 위의 `+`버튼을 누르고, `Python Tests` -> `Unittests`를 클릭해서 추가해 준다.
-<figure>
-    <img src="{{ "media/img/python-making-test-module-screenshot-1.png" | absolute_url }}">
-    <figcaption>PyCharm 테스트 설정</figcaption>
-</figure>
+{{< figure src="/img/python-making-test-module-screenshot-1.png" caption="PyCharm 테스트 설정" >}}
 
 * Target: Script Path를 선택하고 테스트 코드가 있는 곳을 지정해 준다.
 * Pattern: 테스트 파일의 패턴을 정해주는데, 파일 이름이 `test`로 시작한다면 굳이 적을 필요는 없다.
