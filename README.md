@@ -25,7 +25,7 @@ hugo server -D
 ## 빌드하기
 
 ```shell script
-hugo -D
+hugo
 ```
 
 * 결과는 `./public` 에서 확인할 수 있음
