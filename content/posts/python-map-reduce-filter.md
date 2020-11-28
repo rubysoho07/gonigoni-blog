@@ -2,9 +2,9 @@
 title: "Python의 map() filter() reduce() 사용 방법 정리"
 date: 2020-11-28T13:13:35+09:00
 tags: [python, map, filter, reduce, 내장 함수]
-draft: true
+draft: false
 categories: Python
-comments: false
+comments: true
 ---
 
 가끔씩 Python의 `map()`, `filter()`, `reduce()`에 대해 헷갈리는 것들이 있어서 정리해 본다.
