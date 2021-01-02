@@ -141,7 +141,7 @@ Properties:
 * State Machine의 정의가 단순하다면, 그냥 `Definition` 속성에다 JSON 형태로 넣으면 된다. 
 * 로컬에 있는 State Machine의 정의를 참조하려면 `DefinitionUri` 속성에 경로를 적어 넣으면 된다.
 * 상황에 따라 바뀔 수 있는 것들은 `DefinitionSubstitutions`에 넣으면 된다. (예를 들어 State Machine 정의에 `${속성 이름}` 값이 있으면, `DefinitionSubstitutions` 속성 아래에 `속성 이름: 들어가야 하는 값`과 같이 넣으면 된다.)
-* `Role`이나 `Polities` 속성 중 하나는 필수로 들어가야 한다.
+* `Role`이나 `Policies` 속성 중 하나는 필수로 들어가야 한다.
 
 ## SAM에서 중첩된 애플리케이션 빌드/패키징
 
