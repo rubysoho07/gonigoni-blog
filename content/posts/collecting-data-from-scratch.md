@@ -2,9 +2,9 @@
 title: "데이터 수집 단계를 처음부터 구현해 보기"
 date: 2021-01-24T19:36:57+09:00
 tags: [Kafka, ZooKeeper, Big Data]
-draft: true
+draft: false
 categories: Data Engineering
-comments: false
+comments: true
 ---
 
 2021년에는 매월 최소한 글 한 편은 블로그에 올려야겠다고 생각했습니다. 그 달에 공부했던 것, 새로 알게 된 것들을 주로 정리해서 올릴 예정입니다. 
@@ -141,7 +141,7 @@ Topic: test-topic       PartitionCount: 6       ReplicationFactor: 1    Configs:
 앞에서 언급했던 Partition의 개념을 생각해 보면, Partition 개수 조정과 함께 다음 내용도 고려해야 할 것 같습니다.
 
 * 여러 클라이언트가 같은 Topic의 서로 다른 Partition에 데이터를 올리거나 처리할 수 있게 구성한다. 
-* Replication Factor를 조정해서 데이터를 여러 Broker에 복제하여 저장할 수 있도록 한다. (Fault tolerant & High Availability 목적)
+* Replication Factor를 조정해서 데이터를 여러 Broker에 복제하여 저장할 수 있도록 한다. (Fault tolerant & High Availability 목적, topic-partition 단위로 replication이 수행됨)
 
 ## 좀 더 개선할 것들은 없을까?
 
