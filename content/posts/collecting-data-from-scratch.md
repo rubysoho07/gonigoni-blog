@@ -151,6 +151,46 @@ Topic: test-topic       PartitionCount: 6       ReplicationFactor: 1    Configs:
 
 이러한 문제들은 조금씩 준비해서 해결해 보려고 합니다. 
 
+## (3월 1일 추가) Fluentd와 Elasticsearch로 모니터링 환경 구성하기
+
+추가로 2월 초에는 컨테이너 모니터링을 위해 Fluentd와 Elasticsearch로 모니터링 환경을 구성하였습니다. 어떻게 구성했는지, 그리고 구성 과정에서 겪은 것들에 대해 이야기해 보겠습니다. 
+
+### Fluentd + Elasticsearch 구성
+
+컨테이너 로그 수집을 위해 Fluentd를 이용하였습니다. 그리고 Fluentd에서 수집한 로그는 Elasticsearch로 보내도록 설정했습니다. 
+
+Fluentd를 k8s 클러스터에 설정할 때 DaemonSet을 이용했는데요. 클러스터 내 노드 수만큼 Fluentd를 올려서 클러스터 전체를 모니터링 할 수 있기 때문입니다. 
+
+제가 참고한 문서는 다음과 같습니다. 
+
+* [Kubernetes 문서 - 로깅 아키텍처](https://kubernetes.io/ko/docs/concepts/cluster-administration/logging/)
+* [Kubernetes 문서 - DaemonSet](https://kubernetes.io/ko/docs/concepts/workloads/controllers/daemonset/)
+
+Fluentd는 [Elasticsearch 외에도 여러 곳으로 로그를 보낼 수 있는데요.](https://www.fluentd.org/dataoutputs) 저는 Elasticsearch를 선택했습니다. 만약 실제 서비스로 이것을 구축했을 때, 서비스 상태에 영향을 받지 않도록 하기 위해 Elasticsearch는 Kubernetes 클러스터 외부에 구축했습니다. 
+
+이 시점에도 네이버 클라우드의 크레딧이 남아서 네이버 클라우드의 [Elasticsearch Service](https://www.ncloud.com/product/analytics/elasticSearchService)를 이용했는데요. 
+
+AWS의 Elasticsearch Service와 비교하면, Public Subnet에 클러스터를 구성해도 Public Endpoint가 생성되지 않기 때문에 외부 네트워크에서 접속할 수 있는 환경을 수동으로 구성해 주어야 합니다. 저는 [네이버 클라우드의 문서](https://docs.ncloud.com/ko/ess/elasticsearch_console.html)를 참고해서, 클러스터 앞에 Load Balancer를 구성했습니다. 
+
+한편, Fluentd로 로그를 수집할 때, 다음과 같은 에러 메시지가 계속 찍히는 경우가 있습니다. 
+
+```
+Systemd::JournalError: No such file or directory retrying in 1s
+```
+
+참고로 [systemd](https://www.freedesktop.org/wiki/Software/systemd/)는 리눅스에서 시스템과 서비스를 관리하는 프로그램인데요. 보통 systemd는 PID가 1인데, 컨테이너 안에서는 최초에 실행하는 프로세스가 PID 1번을 받는 경우가 있나 봅니다. 제 생각에는 이 때문에 위의 로그가 찍히는 것 같은데요. 이 경우 `FLUENTD_SYSTEMD_CONF` 환경 변수를 `disabled`로 설정하면 로그가 찍히지 않습니다.
+
+### RBAC 설정
+
+Fluentd가 Pod 로그를 가져와서 실행하려면, DaemonSet으로 실행하는 Fluentd는 클러스터 내부의 Pod 정보를 가져올 수 있는 권한이 있어야 합니다. 그렇기 때문에 RBAC(Role-Based Access Control)을 이용했는데요. 다음과 같이 구성하였습니다.
+
+* Fluentd가 사용할 ServiceAccount를 생성합니다. 
+* Cluster에 적용할 ClusterRole을 생성합니다. 
+* ServiceAccount - ClusterRole을 연결하는 ClusterRoleBinding을 생성합니다. 
+* DaemonSet Spec에 serviceAccount를 연결합니다. 
+
+전체적인 내용은 [GitHub에 작성한 Template](https://github.com/rubysoho07/collect-data-from-scratch/blob/main/templates/fluentd-elasticsearch-daemonset.yaml)을 참고하세요.
+
 ## 참고한 문서들
 
 * [Apache Kafka Documentation](https://kafka.apache.org/documentation/)
