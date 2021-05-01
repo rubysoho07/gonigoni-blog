@@ -2,9 +2,9 @@
 title: "데이터 분석 워크플로우를 처음부터 만들어 보기 (2)"
 date: 2021-04-26T21:20:19+09:00
 tags: [Airflow, Big Data]
-draft: true
+draft: false
 categories: Data Engineering
-comments: false
+comments: true
 ---
 
 2월에 올렸던 [데이터 분석 워크플로우를 처음부터 만들어 보기]({{< ref "data-workflow-from-scratch.md" >}})에 이어서 작성하는 두번째 글입니다. 
