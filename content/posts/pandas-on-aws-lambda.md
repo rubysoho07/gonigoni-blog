@@ -49,6 +49,10 @@ pillow.zip
 
 Lambda 런타임이 어떤 OS를 사용하는지 알고 싶다면 [AWS Lambda 런타임](https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/lambda-runtimes.html) 문서를 참고한다.
 
+*(2021-05-15 추가)*
+
+> [다음 링크](https://aws.amazon.com/premiumsupport/knowledge-center/lambda-layer-simulated-docker/)를 참고하여 런타임에 맞는 Docker 이미지(예: `public.ecr.aws/sam/build-python3.6`)를 사용하여 레이어를 구성할 수도 있다. (3.6 대신 다른 버전으로 바꿀 수 있음)
+
 ```shell script
 mkdir layer_pandas
 cd layer_pandas
