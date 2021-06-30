@@ -2,9 +2,9 @@
 title: "Boto3를 쓰면서 겪었던 일들 모음"
 date: 2021-06-28T22:34:04+09:00
 tags: [AWS, Python, Boto3, SDK]
-draft: true
+draft: false
 categories: AWS
-comments: false
+comments: true
 ---
 
 Python을 이용해서 AWS의 여러 기능을 자동화 할 때 Boto3를 많이들 쓰실 것 같은데요. 이번 달에는 Boto3를 쓰면서 궁금했던 것, 또는 자주 사용할 만한 것들을 정리해 보려고 합니다. 
