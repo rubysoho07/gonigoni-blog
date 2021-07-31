@@ -2,9 +2,9 @@
 title: "EKS 내 NGINX Ingress에서 NLB와 ACM 연동 방법 살펴보기"
 date: 2021-07-31T20:08:14+09:00
 tags: [AWS, EKS, Container, NLB, SSL, ACM]
-draft: true
+draft: false
 categories: AWS
-comments: false
+comments: true
 ---
 
 최근 팀 내에서 외부 서비스와 연동하는 서비스가 증가하면서, 고정된 IP 주소를 요청하는 경우가 많아졌습니다. 
