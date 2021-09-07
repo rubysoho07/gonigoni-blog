@@ -2,9 +2,9 @@
 title: "CloudFormation과 SAM을 쓰면서 겪었던 일들 모음"
 date: 2021-08-28T15:51:33+09:00
 tags: [CloudFormation, SAM, Serverless, IaC]
-draft: true
+draft: false
 categories: AWS
-comments: false
+comments: true
 ---
 
 최근 인프라 구성을 CloudFormation을 이용해서 조정해 보았습니다. 그 과정에서 여러 Lambda 함수를 쓸 때는 SAM으로, 그 외의 경우는 CloudFormation을 사용했는데요.
