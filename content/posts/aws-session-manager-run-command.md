@@ -127,14 +127,14 @@ LC_IDENTIFICATION="POSIX"
 LC_ALL=
 ```
 
-즉, `send_command()`를 사용하면 `root` 계정으로 스크립트의 내용을 실행하고, 로케일 설정은 기본값으로 주어집니다. 이 경우, 실행할 명령에 한글이 섞여 있을 때 에러가 발생할 수 있으니 유의하시기 바랍니다.
+즉, `send_command()`를 사용하면 `root` 계정으로 스크립트의 내용을 실행하고, 로케일 설정은 기본값으로 주어집니다. 이 경우, 실행할 명령에 한글이 섞여 있을 때 에러가 발생할 수 있으니 유의하시기 바랍니다. 그리고 [SSM Agent는 root 계정으로 실행하기 때문에](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent-restrict-root-level-commands.html), 해당 작업에 대한 권한 부여는 최대한 제한하는 게 좋겠네요.
 
 # 리소스 정리
 
 테스트가 끝나셨다면 인스턴스를 종료해 주셔야 과금되지 않습니다. 
 
 ```shell
-aws ec2 terminate-instances --instance-ids i-0e51276503e2afc8f
+aws ec2 terminate-instances --instance-ids i-your_instance_id
 ```
 
 추가로, 과금되는 건 아니지만 IAM Role도 삭제해 보겠습니다. 먼저 인스턴스 프로파일에서 IAM Role 연결을 끊고, 인스턴스 프로파일을 삭제합니다.
