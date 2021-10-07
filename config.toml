@@ -13,6 +13,8 @@ disqusShortname = "gonigoni-blog"
   subtitle = "개발 블로그이지만 개발 말고 다른 이야기도 합니다."
   description = "주로 이야기할 주제는 AWS, Python, 프로그래밍과 관련된 것들이지만, 생활하면서 느낀 이야기도 가끔씩 적어볼 예정입니다."
   copyright = "Yungon Park"
+  post_meta = ["date", "categories"]
+  dateformat = "2006-01-02"
 
 [Params.sidebar]
   home = "right"

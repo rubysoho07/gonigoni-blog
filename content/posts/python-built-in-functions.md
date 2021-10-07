@@ -1,6 +1,6 @@
 ---
 title: "몰라서 찾아 봤던 파이썬 내장 함수 모음"
-categories: Python
+categories: [Python]
 tags: [Python, 내장 함수]
 draft: false
 date: 2018-05-16T23:27:00+09:00

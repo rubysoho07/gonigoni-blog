@@ -3,7 +3,7 @@ title: "EKS 내 NGINX Ingress에서 NLB와 ACM 연동 방법 살펴보기"
 date: 2021-07-31T20:08:14+09:00
 tags: [AWS, EKS, Container, NLB, SSL, ACM]
 draft: false
-categories: AWS
+categories: [AWS]
 comments: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Netstat으로 리눅스 서버에서 클라이언트 접속 확인하기"
-categories: Linux
+categories: [Linux]
 tags: [netstat, 모니터링, 네트워크]
 draft: false
 date: 2018-12-25T17:15:00+09:00

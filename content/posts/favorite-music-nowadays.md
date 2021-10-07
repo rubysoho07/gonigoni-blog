@@ -3,7 +3,7 @@ title: "요즘 좋아하는 노래들"
 date: 2020-06-13T12:59:28+09:00
 tags: [음악, Idles, Belle and Sebastian, Beta Band, Arcade Fire]
 draft: false
-categories: Everything
+categories: [Everything]
 comments: true
 ---
 

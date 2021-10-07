@@ -3,7 +3,7 @@ title: "이직 시도 후기 - 2017년 하반기"
 date: 2017-12-10T16:02:00+09:00
 tags: [이직]
 draft: false
-categories: Everything
+categories: [Everything]
 comments: true
 ---
 

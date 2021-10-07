@@ -3,7 +3,7 @@ title: "Boto3를 쓰면서 겪었던 일들 모음"
 date: 2021-06-28T22:34:04+09:00
 tags: [AWS, Python, Boto3, SDK]
 draft: false
-categories: AWS
+categories: [AWS]
 comments: true
 ---
 

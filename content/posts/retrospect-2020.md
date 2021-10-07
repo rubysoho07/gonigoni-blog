@@ -3,7 +3,7 @@ title: "2020년 회고"
 date: 2020-12-31T15:40:13+09:00
 tags: [회고, 2020년]
 draft: false
-categories: Everything
+categories: [Everything]
 comments: true
 ---
 

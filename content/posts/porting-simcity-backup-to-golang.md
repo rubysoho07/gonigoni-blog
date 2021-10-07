@@ -3,7 +3,7 @@ title: "SimCity 백업 프로그램을 Go로 포팅하기"
 date: 2020-10-19T20:44:49+09:00
 tags: [Go, Golang, SimCity]
 draft: false
-categories: Go
+categories: [Go]
 comments: true
 ---
 

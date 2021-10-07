@@ -3,7 +3,7 @@ title: "Locust 1.0 이후 달라진 점들 요약"
 date: 2021-03-30T21:53:01+09:00
 tags: [Locust, 부하 테스트]
 draft: false
-categories: Python
+categories: [Python]
 comments: true
 ---
 

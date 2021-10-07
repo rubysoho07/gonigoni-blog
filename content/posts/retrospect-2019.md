@@ -3,7 +3,7 @@ title: "Retrospect 2019"
 date: 2020-01-04T15:11:05+09:00
 tags: [회고, 2019년]
 draft: false
-categories: Everything
+categories: [Everything]
 comments: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Python으로 Step Functions 활동 만들기"
-categories: AWS
+categories: [AWS]
 tags: [AWS, Step Functions, EC2]
 draft: false
 date: 2018-10-04T23:21:00+09:00

@@ -3,7 +3,7 @@ title: "데이터 수집 단계를 처음부터 구현해 보기"
 date: 2021-01-24T19:36:57+09:00
 tags: [Kafka, ZooKeeper, Big Data]
 draft: false
-categories: Data Engineering
+categories: [Data Engineering]
 comments: true
 ---
 

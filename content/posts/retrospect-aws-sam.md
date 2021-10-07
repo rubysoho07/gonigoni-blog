@@ -1,6 +1,6 @@
 ---
 title: "AWS SAM을 사용하면서 느꼈던 것들"
-categories: AWS
+categories: [AWS]
 tags: [AWS, SAM, Lambda, CloudFormation]
 draft: false
 date: 2019-10-22T21:02:00+09:00

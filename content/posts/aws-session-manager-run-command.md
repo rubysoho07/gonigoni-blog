@@ -3,7 +3,7 @@ title: "AWS Session Manager & Run Command로 외부에서 쉘 스크립트 실�
 date: 2021-09-30T14:38:05+09:00
 tags: [AWS, Systems Manager, Session Manager]
 draft: false
-categories: AWS
+categories: [AWS]
 comments: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Python `@property` 데코레이터와 getter/setter"
-categories: Python
+categories: [Python]
 tags: [Python, property, getter, setter]
 draft: false
 date: 2018-05-18T23:36:00+09:00

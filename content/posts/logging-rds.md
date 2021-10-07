@@ -1,6 +1,6 @@
 ---
 title: "RDS MySQL에서 일반/느린 쿼리 로그 찍기"
-categories: AWS
+categories: [AWS]
 tags: [RDS, MySQL, AWS]
 draft: false
 date: 2018-10-03T14:24:00+09:00

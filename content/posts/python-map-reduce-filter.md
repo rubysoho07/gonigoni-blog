@@ -3,7 +3,7 @@ title: "Python의 map() filter() reduce() 사용 방법 정리"
 date: 2020-11-28T13:13:35+09:00
 tags: [python, map, filter, reduce, 내장 함수]
 draft: false
-categories: Python
+categories: [Python]
 comments: true
 ---
 

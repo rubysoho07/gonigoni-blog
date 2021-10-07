@@ -1,6 +1,6 @@
 ---
 title: "VSCode와 oh-my-zsh를 사용할 때 터미널 글꼴이 깨진다면"
-categories: Linux
+categories: [Linux]
 tags: [VSCode, Visual Studio Code, zsh, oh-my-zsh, font]
 draft: false
 date: 2018-10-04T21:34:00+09:00

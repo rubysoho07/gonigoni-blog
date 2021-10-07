@@ -1,6 +1,6 @@
 ---
 title: "EC2에 Bitnami MongoDB 이미지 올리기"
-categories: AWS
+categories: [AWS]
 tags: [AWS, EC2, MongoDB]
 draft: false
 date: 2019-02-16T22:30:00+09:00

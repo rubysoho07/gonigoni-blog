@@ -1,6 +1,6 @@
 ---
 title: "신입 사원 교육 후기: 이상과 현실"
-categories: Everything
+categories: [Everything]
 tags: [신입 사원, 교육]
 draft: false
 date: 2020-01-01T20:43:58+09:00

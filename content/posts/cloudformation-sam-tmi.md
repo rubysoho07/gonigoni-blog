@@ -3,7 +3,7 @@ title: "CloudFormation과 SAM을 쓰면서 겪었던 일들 모음"
 date: 2021-08-28T15:51:33+09:00
 tags: [CloudFormation, SAM, Serverless, IaC]
 draft: false
-categories: AWS
+categories: [AWS]
 comments: true
 ---
 

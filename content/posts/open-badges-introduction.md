@@ -3,7 +3,7 @@ title: "Open Badges 소개"
 date: 2021-05-01T12:55:57+09:00
 tags: [Open Badges, Standard]
 draft: false
-categories: Everything
+categories: [Everything]
 comments: true
 ---
 

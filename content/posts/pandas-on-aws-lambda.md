@@ -3,7 +3,7 @@ title: "AWS Lambda에 Pandas 올리기"
 date: 2020-06-27T21:45:40+09:00
 tags: [AWS, Lambda, Pandas, Serverless]
 draft: false
-categories: AWS
+categories: [AWS]
 comments: true
 ---
 

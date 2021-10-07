@@ -1,6 +1,6 @@
 ---
 title: "파이썬에서 테스트 코드를 만들면서 겪은 일들"
-categories: Python
+categories: [Python]
 tags: [Python, 테스트]
 draft: false
 date: 2018-05-15T22:35:00+09:00

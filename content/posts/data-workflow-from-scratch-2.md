@@ -3,7 +3,7 @@ title: "데이터 분석 워크플로우를 처음부터 만들어 보기 (2)"
 date: 2021-04-26T21:20:19+09:00
 tags: [Airflow, Big Data]
 draft: false
-categories: Data Engineering
+categories: [Data Engineering]
 comments: true
 ---
 

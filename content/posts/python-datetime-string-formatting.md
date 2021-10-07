@@ -1,6 +1,6 @@
 ---
 title: "Python 날짜/시간을 문자열로 만들기 위한 규칙 정리"
-categories: Python
+categories: [Python]
 tags: [Python, 문자열]
 draft: false
 date: 2018-05-14T23:24:00+09:00

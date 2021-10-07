@@ -1,6 +1,6 @@
 ---
 title: "Git 원격 저장소에서 사용자 이름에 '@'이 들어가면 동작하지 않는 경우"
-categories: Git
+categories: [Git]
 tags: [Git]
 draft: false
 date: 2018-10-02T23:46:00+09:00

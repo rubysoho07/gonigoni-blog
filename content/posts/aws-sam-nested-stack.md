@@ -3,7 +3,7 @@ title: "AWS SAM에서 중첩된 스택 배포 시 유의해야 할 것들"
 date: 2020-06-29T20:58:17+09:00
 tags: [AWS, SAM, Serverless, Lambda, CloudFormation]
 draft: false
-categories: AWS
+categories: [AWS]
 comments: true
 ---
 
