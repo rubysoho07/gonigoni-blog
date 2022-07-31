@@ -2,7 +2,7 @@ baseURL = "/"
 languageCode = "ko-kr"
 title = "GoniGoni!"
 theme = "mainroad"
-googleAnalytics = "UA-131546844-1"
+googleAnalytics = "G-325333971"
 disqusShortname = "gonigoni-blog"
 
 [Author]
