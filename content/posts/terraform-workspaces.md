@@ -16,7 +16,7 @@ Terraform에서 개발/운영 환경을 나누기 위해, 폴더/디렉터리를
 
 ## Workspaces를 사용하려면?
 
-Terraform에서 관리하는 리소스 상태는 backend에 저장합니다. 이러한 데이터는 하나의 workspace에 속합니다. 기본적으로 이런 리소스 상태는  default workspace에 들어 있습니다. 몇몇 backend는 여러 개의 workspe를 지원하며, 하나의 설정과 연결된 여러 상태를 저장할 수 있습니다. 
+Terraform에서 관리하는 리소스 상태는 backend에 저장합니다. 이러한 데이터는 하나의 workspace에 속합니다. 기본적으로 이런 리소스 상태는 default workspace에 들어 있습니다. 몇몇 backend는 여러 개의 workspace를 지원하며, 하나의 설정과 연결된 여러 상태를 저장할 수 있습니다. 
 
 * AzureRM
 * Consul
