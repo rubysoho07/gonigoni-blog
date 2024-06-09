@@ -2,12 +2,16 @@ baseURL = "/"
 languageCode = "ko-kr"
 title = "GoniGoni!"
 theme = "mainroad"
-googleAnalytics = "G-JN7PQ7YC6Q"
-disqusShortname = "gonigoni-blog"
+
+[services.disqus]
+  shortname = "gonigoni-blog" # Enable Disqus by entering your Disqus shortname
+
+[services.googleAnalytics]
+  ID = "G-JN7PQ7YC6Q" # Enable Google Analytics by entering your tracking ID
 
 [Author]
   name = "Yungon Park"
-  bio = "Test"
+  bio = "DevOps Engineer"
 
 [Params]
   subtitle = "개발 블로그이지만 개발 말고 다른 이야기도 합니다."
