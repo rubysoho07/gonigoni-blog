@@ -2,9 +2,9 @@
 title: "VPC Reachability Analyzer로 AWS 네트워크 문제 확인하기"
 date: 2024-12-25T21:49:00+09:00
 tags: [VPC, Reachability Analyzer]
-draft: true
+draft: false
 categories: [AWS]
-comments: false
+comments: true
 ---
 
 인프라 구성을 하다 보면, 네트워크 설정 때문에 문제를 겪는 일이 많습니다. "Connection timeout"과 같은 네트워크 관련 오류가 갑자기 발생하면, 어디서부터 원인을 찾아야 할 지 막막한데요. AWS를 사용하신다면 네트워크 문제를 겪을 때 VPC Reachability Analyzer라는 서비스를 이용하여 원인을 찾을 수 있습니다. 출발하는 지점부터 도착지까지 어떤 과정으로 트래픽이 도달하는 지 상세하게 확인할 수 있는 서비스입니다. 네트워크 문제가 발생한다면 한 번 사용해 보시기 바랍니다.
