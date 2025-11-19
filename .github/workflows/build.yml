@@ -35,7 +35,7 @@ jobs:
       - name: Deploy blog
         uses: peaceiris/actions-gh-pages@v4
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          personal_token: ${{ secrets.GH_PAT }}
           external_repository: rubysoho07/rubysoho07.github.io
           publish_branch: master
           publish_dir: ./public
