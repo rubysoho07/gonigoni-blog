@@ -6,9 +6,9 @@ name: Build blog
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -19,24 +19,23 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
-      with:
-        token: ${{ secrets.GH_PAT }}
-        submodules: 'recursive'
-      
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v3
-      with:
-        hugo-version: 'latest'
-        
-    - name: Build blog
-      run: hugo
-    
-    - name: Deploy blog
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        external_repository: rubysoho07/rubysoho07.github.io
-        publish_branch: master
-        publish_dir: ./public
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+        with:
+          submodules: "recursive"
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "latest"
+
+      - name: Build blog
+        run: hugo
+
+      - name: Deploy blog
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          external_repository: rubysoho07/rubysoho07.github.io
+          publish_branch: master
+          publish_dir: ./public
