@@ -110,7 +110,7 @@ AWS에서 프라이빗 서브넷을 생성했다면 프라이빗 서브넷을 �
 
 Azure의 [네트워크 보안 그룹](https://learn.microsoft.com/ko-kr/azure/virtual-network/network-security-groups-overview)은 AWS의 Network ACL과 비슷해 보입니다. 우선 순위, 포트, 프로토콜, 소스와 대상, 허용/차단 여부를 설정할 수 있는 것이 AWS의 Network ACL과 비슷하다는 생각이 들었습니다. 네트워크 보안 그룹에서는 우선순위가 높은 규칙을 기준으로 트래픽의 허용/차단 여부를 결정합니다. (아래 스크린샷을 보시면 어떤 느낌인지 이해하실 수 있을거예요. 아래 스크린샷은 개인 계정에서 캡처했습니다)
 
-{{< figure src="/img/starting-azure-1-2.png" caption="AWS와 Azure 네트워크 비교 (왼쪽: AWS / 오른쪽: Azure)" >}}
+{{< figure src="/img/starting-azure-1-2.png" caption="Azure 포털에서 네트워크 보안 그룹 설정" >}}
 
 네트워크 보안 그룹은 Network ACL과 마찬가지로 서브넷 단위로 연결할 수 있습니다. 하지만, Azure의 네트워크 보안 그룹은 Network ACL과 다르게 네트워크 인터페이스에도 연결할 수 있습니다. AWS의 ENI에 Network ACL을 연결할 수 있다고 생각하시면 되겠습니다. 허용 규칙만 정할 수 있는 AWS의 보안 그룹과 비교하면, 트래픽 허용 및 차단 규칙도 정할 수 있다는 점이 달랐습니다. 가상 서버를 만들 때 사용자가 설정한 네트워크 보안 그룹을 지정할 수 있습니다. 
 
