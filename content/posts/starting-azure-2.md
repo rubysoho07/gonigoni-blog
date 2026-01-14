@@ -336,19 +336,36 @@ AWS에서 서버 개수를 자동으로 관리하기 위해 Auto Scaling Group(�
 
 Terraform으로 2대의 Ubuntu 24.04 서버가 있는 VMSS를 배포해 보겠습니다. SSH 키와 네트워크 보안 그룹은 따로 생성했고, 로드 밸런서는 연결하지 않는 것으로 가정하겠습니다.
 
-```hcl
-resource "azurerm_linux_virtual_machine_scale_set" "gonigoni_test" {
-  name                = "gonigoni-vmss"
-  resource_group_name = azurerm_resource_group.gonigoni.name
-  location            = azurerm_resource_group.gonigoni.location
-  sku                 = "Standard_D2as_v6" # 서버 크기
-  instances           = 2                  # 서버 대수
-  admin_username      = "adminuser"
+(2026-01-14 수정: 최근 권장되는 방식은 Flexible Orchestration 입니다. ([링크 참조](https://learn.microsoft.com/ko-kr/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes)) 이를 바탕으로 Terraform 코드를 수정했습니다.)
 
-  # SSH Key
-  admin_ssh_key {
-    username   = "adminuser"
-    public_key = data.azurerm_ssh_public_key.goni_key.public_key
+```hcl
+resource "azurerm_orchestrated_virtual_machine_scale_set" "gonigoni_test" {
+  name                        = "gonigoni-vmss"
+  resource_group_name         = azurerm_resource_group.gonigoni.name
+  location                    = azurerm_resource_group.gonigoni.location
+  platform_fault_domain_count = 1
+  instances                   = 2                  # 서버 대수
+
+  sku_name = "Mix"
+  sku_profile {
+    # 서버 타입: 최대 5개까지 설정 가능
+    vm_sizes = ["Standard_D2as_v6"]
+
+    # allocation_strategy에 대한 설명: https://learn.microsoft.com/ko-kr/azure/virtual-machine-scale-sets/instance-mix-overview
+    # LowestPrice가 기본값이며, 안정성이 중요하면 CapacityOptimized를 사용
+    allocation_strategy = "CapacityOptimized"
+  }
+
+  os_profile {
+    linux_configuration {
+      admin_username = "azureuser"
+
+      # SSH Key
+      admin_ssh_key {
+        username   = "azureuser"
+        public_key = data.azurerm_ssh_public_key.gonigoni_v2.public_key
+      }
+    }
   }
 
   # Ubuntu 24.04 LTS
