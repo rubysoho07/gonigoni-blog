@@ -90,14 +90,14 @@ NFS를 사용하려면 기존의 스토리지 계정을 이용할 수 없기 때
 - 공용 네트워크 액세스: 사용 안 함
 - 프라이빗 엔드포인트 추가
     - 이름: 임의로 지정
-    - 스토리지 하위 리소스: blob 또는 file로 선택
+    - 스토리지 하위 리소스: blob 선택
     - 가상 네트워크 및 서브넷 선택
 
 스토리지 계정을 만든 후, 컨테이너를 만듭니다. 
 
 Terraform으로 구성하는 경우, [링크](https://gist.github.com/rubysoho07/f1befc56ca10aad80d8c66c64ac3987c)를 참고해 주세요. 
 
-서버에 마운트할 때는 AZNFS Mount Helper라는 도구를 사용해야 합니다. 아래 링크한 내용을 참고해서 마운트 해 보시면 됩니다.
+서버에 마운트할 때는 AZNFS Mount Helper라는 도구를 사용해야 합니다. 아래 링크한 내용을 참고해서 마운트 하시면 됩니다.
 
 - [AZNFS 설치 방법](https://learn.microsoft.com/ko-kr/azure/storage/blobs/network-file-system-protocol-support-how-to#step-5-install-the-aznfs-mount-helper-package)
 - [컨테이너 탑재 방법](https://learn.microsoft.com/ko-kr/azure/storage/blobs/network-file-system-protocol-support-how-to#step-6-mount-the-container)
