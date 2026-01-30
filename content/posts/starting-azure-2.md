@@ -104,7 +104,7 @@ x64             rockylinux-x86_64  resf         9-base  resf:rockylinux-x86_64:9
 다만, **Marketplace 이미지를 이용할 때는 Plan 정보를 지정해야 합니다.** Plan 정보를 확인하려면, Azure CLI로 다음 명령을 입력합니다. Rocky Linux 9 버전(SKU가 `9-base`인 최신 버전)을 이용한다고 가정하겠습니다. Azure CLI로 아래 명령을 입력하세요. 
 
 ```bash
-az vm image show --urn resf:rockylinux-x86_64:9-base:latest
+az vm image terms show --urn resf:rockylinux-x86_64:9-base:latest
 
 # Output
 {
