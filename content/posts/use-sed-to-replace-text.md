@@ -119,6 +119,65 @@ $ cat test.txt
  1255  python -m pip install pytz
 ```
 
+#### 예제 4: 문자/숫자/공백만 가져와서 대체하는 방법
+
+(2026-01-30 추가)
+
+문자열 패턴에서 문자/숫자/공백만 가져와서 대체하는 방법에 대해 알아보자. 
+
+아래와 같은 텍스트 파일을 저장했다고 하자. (text.txt 파일로 저장한다)
+
+```
+abcd
+defg
+1234
+5678
+    
+```
+(참고: 마지막 줄은 스페이스를 4번 눌렀다)
+
+이 파일에서 알파벳만, 숫자만, 공백만 바꿔보겠다. 일반적으로 사용하는 정규 표현식을 쓰려면 `-E` 옵션을 추가한다. `sed` 명령에서는 Extended Regular Expression이라 한다. 기본 정규 표현식과 다른 점은 [링크](https://www.gnu.org/software/sed/manual/html_node/ERE-syntax.html#ERE-syntax)를 참조한다. 
+
+```shell
+# 알파벳만 바꾸기
+sed -E -i 's/[[:alpha:]]+$/replaced-alphabets/' test.txt
+
+# 숫자만 바꾸기
+sed -E -i 's/[[:digit:]]+$/replaced-numbers/' test.txt
+
+# 공백만 바꾸기
+sed -E -i 's/[[:blank:]]/replaced-blank/' test.txt
+```
+
+결과는 다음과 같다. 
+```shell
+$ cat test.txt
+replaced-alphabets
+replaced-alphabets
+replaced-numbers
+replaced-numbers
+replaced-blank   
+```
+
+#### 예제 5: 특정 패턴을 제외하는 방법
+
+(2026-01-30 추가)
+
+특정 패턴을 제외하고 텍스트를 바꿔야 하는 상황이 있을 수 있다. 아래와 같이 `[]` 안의 맨 앞에 `^`를 추가하면 된다. 앞의 test.txt 파일을 가지고 테스트 해 보자. 
+
+```shell
+# 숫자가 아닌 것만 바꾸기
+sed -E -i 's/[^[:digit:]]+/replaced-lines/' test.txt
+
+# 결과: 문자열로만 구성된 라인, 공백으로만 구성된 라인이 바뀌었다.
+$ cat test.txt 
+replaced-lines
+replaced-lines
+1234
+5678
+replaced-lines
+```
+
 ### 여담: macOS에서 `invalid command code ., despite escaping periods` 오류가 발생하는 경우
 
 예전에 macOS에서 sed를 썼을 때, 위와 같은 명령을 썼음에도 불구하고 `invalid command code ., despite escaping periods` 오류가 발생한 적이 있다. 
