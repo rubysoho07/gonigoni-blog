@@ -44,7 +44,7 @@ comments: true
 
 간단하게 서버 두 대를 만들어 보겠습니다. Terraform이 설치되어 있고, AWS Access Key와 Secret Access Key가 설정되어 있다고 가정해 볼게요.
 
-{{< gist rubysoho07 1915bc95eaf255409300a37da01ab32c >}}
+[코드 링크](https://gist.github.com/rubysoho07/1915bc95eaf255409300a37da01ab32c)
 
 우선 위 코드를 복사해서 임의의 파일로 저장합니다.
 

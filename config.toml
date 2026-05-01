@@ -1,5 +1,5 @@
 baseURL = "/"
-languageCode = "ko-kr"
+locale = "ko-kr"
 title = "GoniGoni!"
 theme = "mainroad"
 
